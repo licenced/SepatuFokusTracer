@@ -1,0 +1,7 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="example.doni.sepatufokustracer">
+
+    <application>
+        <activity android:name="example.doni.sepatufokustracer.Longlat"></activity>
+    </application>
+</manifest>

@@ -23,12 +23,18 @@ public class MainMenu extends AppCompatActivity {
     }
 
     public void keLongLat(View view) {
+        Intent longlat = new Intent(this, Longlat.class);
+        startActivity(longlat);
     }
 
     public void keUltrasonic(View view) {
+        Intent ultra = new Intent(this, Ultrasonic.class);
+        startActivity(ultra);
     }
 
     public void keGyroscope(View view) {
+        Intent gyro = new Intent(this, Gyroscope.class);
+        startActivity(gyro);
     }
 
     public void keProfil(View view) {

@@ -1,7 +1,10 @@
 package example.doni.sepatufokustracer;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 
 public class setting extends AppCompatActivity {
 

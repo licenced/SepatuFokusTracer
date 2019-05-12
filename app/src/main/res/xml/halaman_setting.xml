@@ -5,24 +5,11 @@
 
     <PreferenceCategory
         android:title="Setting">
-        <SwitchPreference
-            android:defaultValue="false"
-            android:title="Contoh Switch"
-            android:key="@string/key_contoh_switch"/>
-        <CheckBoxPreference
-            android:defaultValue="false"
-            android:title="Contoh Checkbox"
-            android:key="@string/key_contoh_checkbox"/>
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:title="Umum">
 
         <Preference
-            android:title="About Apps"
+            android:title="Tentang Aplikasi"
             android:key="@string/key_about"
-            android:summary="Berisi tentang ringkasan dan versi"
+            android:summary="Berisi tentang pembuat dan versi"
             />
 
     </PreferenceCategory>
