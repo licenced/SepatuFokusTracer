@@ -58,7 +58,7 @@ public class Register extends AppCompatActivity {
                 else if (passwordUser.isEmpty()){
                     edtPassword.setError("Password tidak boleh kosong");
                 }
-                //jika password kurang dari 6 karakter
+                //jika password kurang dari 6 karakter loh
                 else if (passwordUser.length() < 6){
                     edtPassword.setError("Password minimal terdiri dari 6 karakter");
                 }
