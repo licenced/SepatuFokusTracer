@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Sepatu Fokus Tracer</string>
+    <string name="title_activity_maps">Map</string>
+
+
+    <string name="key_about">key_about</string>
+    <string name="key_contoh_checkbox">key_contoh_checkbox</string>
+    <string name="key_contoh_switch">key_contoh_switch</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

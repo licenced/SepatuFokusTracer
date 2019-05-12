@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--belajar di okedroid.com-->
+
+    <PreferenceCategory
+        android:title="Setting">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:title="Contoh Switch"
+            android:key="@string/key_contoh_switch"/>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:title="Contoh Checkbox"
+            android:key="@string/key_contoh_checkbox"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Umum">
+
+        <Preference
+            android:title="About Apps"
+            android:key="@string/key_about"
+            android:summary="Berisi tentang ringkasan dan versi"
+            />
+
+    </PreferenceCategory>
+</PreferenceScreen>

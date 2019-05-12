@@ -1,0 +1,104 @@
+{
+  "project_info": {
+    "project_number": "846164308834",
+    "firebase_url": "https://sepatu-tunanetra.firebaseio.com",
+    "project_id": "sepatu-tunanetra",
+    "storage_bucket": "sepatu-tunanetra.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:846164308834:android:f21eaadede887cca",
+        "android_client_info": {
+          "package_name": "com.example.annisa.getdevicelocation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "846164308834-lbdqlvbeop7bub3ngcfjnauqvkceji6o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBx3n_RSCt2-9RUOrmiOoC3lwLmsMEa0FA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:846164308834:android:af26c2c86c4a730f",
+        "android_client_info": {
+          "package_name": "example.doni.sepatufokus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "846164308834-lbdqlvbeop7bub3ngcfjnauqvkceji6o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBx3n_RSCt2-9RUOrmiOoC3lwLmsMEa0FA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:846164308834:android:a8f6361d044c670c",
+        "android_client_info": {
+          "package_name": "example.doni.sepatufokustracer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "846164308834-lbdqlvbeop7bub3ngcfjnauqvkceji6o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBx3n_RSCt2-9RUOrmiOoC3lwLmsMEa0FA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
