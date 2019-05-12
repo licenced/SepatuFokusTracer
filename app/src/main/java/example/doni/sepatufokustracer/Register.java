@@ -1,7 +1,9 @@
 package example.doni.sepatufokustracer;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.annotation.NonNull;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Patterns;
@@ -71,12 +73,24 @@ public class Register extends AppCompatActivity {
                                     //jika gagal register do something
                                     if (!task.isSuccessful()){
                                         Toast.makeText(Register.this,
-                                                "Register gagal karena "+ task.getException().getMessage(),
+                                                "Error, "+ task.getException().getMessage(),
                                                 Toast.LENGTH_LONG).show();
                                     }else {
                                         //jika sukses akan menuju ke login activity
                                         Toast.makeText(Register.this,"Registrasi Berhasil", Toast.LENGTH_LONG).show();
-                                        startActivity(new Intent(Register.this, Login.class));
+
+
+                                        AlertDialog.Builder builder = new AlertDialog.Builder(Register.this);
+                                        builder.setCancelable(true);
+                                        builder.setTitle("Pesan");
+                                        builder.setMessage("Registrasi berhasil !!!");
+                                        builder.setPositiveButton("ok", new DialogInterface.OnClickListener() {
+                                            @Override
+                                            public void onClick(DialogInterface dialog, int which) {
+                                                startActivity(new Intent(Register.this, Login.class));
+                                            }
+                                        });
+                                        builder.show();
                                     }
                                 }
                             });

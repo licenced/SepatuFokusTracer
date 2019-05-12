@@ -26,7 +26,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     Marker marker;
 
 
-    double Lat = -5.4413724;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -126,10 +125,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
                 Double Lat = Double.valueOf(dataSnapshot.child("latitude").getValue().toString());
                 Double Lng = Double.valueOf(dataSnapshot.child("longtitude").getValue().toString());
-                LatLng sydney = new LatLng(Lat, Lng);
-                mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
+                LatLng dejavu = new LatLng(Lat, Lng);
+                mMap.addMarker(new MarkerOptions().position(dejavu).title("Lokasi jatuh !!!"));
                 float zoomLevel = 16.0f;
-                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, zoomLevel));
+                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(dejavu, zoomLevel));
 
             }
 
