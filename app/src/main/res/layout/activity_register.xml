@@ -50,6 +50,7 @@
         android:drawableLeft="@drawable/ic_action_mail"
         android:ems="10"
         android:hint="Email"
+        android:onClick="pindah"
         android:importantForAutofill="no"
         android:inputType="textEmailAddress"
         android:textSize="16dp"
