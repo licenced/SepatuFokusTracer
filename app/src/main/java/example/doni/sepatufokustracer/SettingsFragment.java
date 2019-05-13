@@ -23,27 +23,16 @@ public class SettingsFragment extends PreferenceFragment {
         // Required empty public constructor
     }
 
-
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         addPreferencesFromResource(R.xml.halaman_setting);
-
-
         settingPref();
-
-
     }
 
     private void settingPref() {
 
-
         Preference aboutPref = findPreference(getString(R.string.key_about));
-
-        CheckBoxPreference checkboxPref = (CheckBoxPreference) findPreference(getString(R.string.key_contoh_checkbox));
-
-        SwitchPreference switchPref = (SwitchPreference) findPreference(getString(R.string.key_contoh_switch));
 
         aboutPref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
 
@@ -52,52 +41,11 @@ public class SettingsFragment extends PreferenceFragment {
 
                 Toast.makeText(getActivity(), "Membuka Halaman About", Toast.LENGTH_SHORT).show();
 
-//                Intent about = new Intent(getActivity(), about.class);
-//                startActivity(about);
-
-                return true;
-
-            }
-        });
-
-
-        checkboxPref.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
-            @Override
-            public boolean onPreferenceChange(Preference preference, Object newValue) {
-
-
-                if ((Boolean) newValue) {
-
-                    Toast.makeText(getActivity(), "Checkbox Hidup", Toast.LENGTH_SHORT).show();
-                } else {
-
-                    Toast.makeText(getActivity(), "Checkbox Mati", Toast.LENGTH_SHORT).show();
-                }
-
+                Intent about = new Intent(getActivity(), about.class);
+                startActivity(about);
 
                 return true;
             }
         });
-
-        switchPref.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
-            @Override
-            public boolean onPreferenceChange(Preference preference, Object newValue) {
-
-
-                if ((Boolean) newValue) {
-
-                    Toast.makeText(getActivity(), "Switch Hidup", Toast.LENGTH_SHORT).show();
-                } else {
-
-                    Toast.makeText(getActivity(), "Switch Mati", Toast.LENGTH_SHORT).show();
-                }
-
-
-                return true;
-            }
-        });
-
-
     }
-
 }

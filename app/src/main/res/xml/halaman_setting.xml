@@ -4,12 +4,13 @@
     <!--belajar di okedroid.com-->
 
     <PreferenceCategory
-        android:title="Setting">
+        android:title="Pengaturan">
 
         <Preference
             android:title="Tentang Aplikasi"
             android:key="@string/key_about"
-            android:summary="Berisi tentang pembuat dan versi"
+            android:summary="Berisi tentang ringkasan dan versi"
+            android:onClick="about"
             />
 
     </PreferenceCategory>

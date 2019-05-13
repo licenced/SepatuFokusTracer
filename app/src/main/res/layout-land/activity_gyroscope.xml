@@ -7,7 +7,7 @@
     android:background="@drawable/background"
     android:orientation="vertical"
     android:weightSum="10"
-    tools:context=".Longlat"
+    tools:context=".Gyroscope"
     >
 
     <RelativeLayout
@@ -18,15 +18,15 @@
         <TextView
             android:id="@+id/judul"
             android:layout_width="wrap_content"
-            android:layout_height="49dp"
+            android:layout_height="38dp"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="49dp"
-            android:layout_marginEnd="-187dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="-285dp"
             android:layout_marginBottom="10dp"
             android:layout_toStartOf="@+id/imageView"
-            android:text="Longitude dan Latitude"
+            android:text="Gyroscope"
             android:textColor="#ffffff"
-            android:textSize="25dp"
+            android:textSize="30dp"
             android:textStyle="bold" />
 
         <ImageView
@@ -36,21 +36,21 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="142dp"
+            android:layout_marginEnd="324dp"
             android:layout_marginBottom="0dp"
             android:background="#ffffff"
-            app:srcCompat="@drawable/ico_map" />
+            app:srcCompat="@drawable/ico_gyroscope" />
 
     </RelativeLayout>
 
 
 
     <GridLayout
-        android:columnCount="2"
+        android:columnCount="3"
         android:rowCount="1"
         android:alignmentMode="alignBounds"
         android:columnOrderPreserved="false"
-        android:layout_weight="2.5"
+        android:layout_weight="4"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:padding="30dp">
@@ -75,22 +75,13 @@
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:id="@+id/longitude_label"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Longitude"
-                    android:textAlignment="center"
-                    android:textColor="@android:color/black"
-                    android:textSize="13sp"
-                    android:textStyle="bold" />
-                <TextView
-                    android:id="@+id/longitude_value"
+                    android:id="@+id/sumbu_x"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
-                    android:textSize="12sp"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
 
@@ -98,6 +89,39 @@
 
         </android.support.v7.widget.CardView>
 
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/sumbu_y"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
             android:layout_width="0dp"
@@ -119,20 +143,11 @@
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:id="@+id/latitude_label"
-                    android:text="Latitude"
-                    android:textAlignment="center"
-                    android:textColor="@android:color/black"
-                    android:textSize="13sp"
-                    android:textStyle="bold"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-                <TextView
-                    android:id="@+id/latitude_value"
+                    android:id="@+id/sumbu_z"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
-                    android:textSize="12sp"
+                    android:textSize="18sp"
                     android:textStyle="bold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
